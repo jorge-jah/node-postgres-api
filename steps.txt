@@ -1,0 +1,12 @@
+criar node 
+- npm init -y
+
+instalar module
+- npm i "nome do modulo"
+
+utilizar o ES6
+- no package.json, colocar abaixo do main o "type": "module"
+
+rodar a aplicação
+no package.json, colocar o start como chave e "noe server.js" (se o arquivo for server.js)
+-depois colocar o comando npm start
