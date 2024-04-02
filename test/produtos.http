@@ -1,0 +1,36 @@
+GET http://[::1]:3000/produtos
+###
+
+GET http://[::1]:3000/produto/4
+###
+
+POST http://[::1]:3000/produto
+Content-Type: application/json
+
+{
+    "id": 4,
+    "nome": "Produto Teste 4",
+    "descricao": "Descrição do produto teste",
+    "desconto": 0,
+    "preco": 99.99,
+    "ativo": true,
+    "categoria": "Teste",
+    "data_cadastro": "2024-03-19"
+}
+
+###
+PUT http://[::1]:3000/produto/4
+Content-Type: application/json
+
+{
+    "nome": "Novo Produto Teste 4",
+    "descricao": "Descrição do produto teste",
+    "desconto": 1,
+    "preco": 99.99,
+    "ativo": true,
+    "categoria": "Teste",
+    "data_cadastro": "2024-03-19"
+}
+
+###
+DELETE http://[::1]:3000/produto/3
